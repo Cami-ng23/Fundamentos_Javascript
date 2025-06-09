@@ -1,47 +1,28 @@
-// Declaración de variables
-let edadCamilo = 16;
-let precioTomate = 12.99;
-let saludoFrances = "salut mon ami";
-let eresMalo = true;
-let arregloNumeros = [1, 2, 3, 4];
-let objetoPersona = { nombre: "Ana", edad: 30 };
-let valorIndefinido;
-let valorNulo = null;
-const mes = "Junio";
 
-// Funciones para mostrar cada valor con alert()
-function mostrarEdadCamilo() {
-    alert("Edad camilo: " + edadCamilo);
+
+function usarString() {
+    //Uso de String Ejemplos
+
+    let nombre = prompt("Ingrese su nombre:"); //Variable tipo texto
+
+    let primeraLetra = nombre[0];
+    //asignamos valor a primeraLetra con posición 0 de nombre
+    let ultimaLetra = nombre[nombre.length - 1];
+    alert("Primera Letra es:" + primeraLetra +
+        "\nUltima letra es: " + ultimaLetra
+    );
 }
 
-function mostrarPrecioTomate() {
-    alert("Precio Tomate: " + precioTomate);
+
+
+function manipularApellido() {
+
+    let apellido = prompt("Ingrese su apellido:");
+
+    let segundaLetra = apellido[1];
+    let penultimaLetra = apellido[apellido.length - 2];
+    alert("Segunda letra es: " + segundaLetra +
+        "\nPenultima Letra es: " + penultimaLetra
+    );
 }
 
-function mostrarSaludoFrances() {
-    alert("Saludo Frances: " + saludoFrances);
-}
-
-function mostrarEresMalo() {
-    alert("Eres Malo: " + eresMalo);
-}
-
-function mostrarArreglo() {
-    alert("Arreglo de números: " + arregloNumeros);
-}
-
-function mostrarObjeto() {
-    alert("Objeto persona: " + JSON.stringify(objetoPersona));
-}
-
-function mostrarIndefinido() {
-    alert("Valor indefinido: " + valorIndefinido);
-}
-
-function mostrarNulo() {
-    alert("Valor nulo: " + valorNulo);
-}
-
-function mostrarConstante() {
-    alert("Constante mes: " + mes);
-}
